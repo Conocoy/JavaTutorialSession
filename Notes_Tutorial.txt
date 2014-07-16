@@ -1,0 +1,2 @@
+Class names should start with an upper case, method names with a lower case, program file name should match the class name (is this true? maybe a convention)
+
