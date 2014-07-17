@@ -1,22 +1,12 @@
-public class Dog{
-String breed;
-int age;
-String color;
+public class Dogs{
 
-void barking(){
-}
+	public static void main(String[] args){
+		Puppy myPuppy = new Puppy("Wookie");
+		myPuppy.setAge(2);
+		myPuppy.getAge();
+		
+		Puppy emptyPuppy = new Puppy();
+		emptyPuppy.getAge();
+	}
 
-void hungry(){
-}
-
-void sleeping(){
-}
-}
-
-public Class Puppy{
-public Puppy(){
-}
-
-public Puppy(String name){
-}
 }

@@ -1,2 +1,12 @@
 Class names should start with an upper case, method names with a lower case, program file name should match the class name (is this true? maybe a convention)
 
+Singleton example is good to see how singleton classes work, can be a powerful technique!
+
+Inheritance acces control:
+1) Methods declared pulic in a superclass must be public in subclasses
+2) Methods declared protected must be declared protected or public
+3) Methods declared without acces control can be more private
+4) Methods declared private do not inherit
+
+
+
