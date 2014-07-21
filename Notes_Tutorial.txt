@@ -8,5 +8,19 @@ Inheritance acces control:
 3) Methods declared without acces control can be more private
 4) Methods declared private do not inherit
 
+Enhanced for loops in java, same idea as the Python for x in l where l is a list. Example:
+
+int[] numbers = [1,2,3]
+for( int x : numbers){ System.out.println(x); }
+results in
+
+1
+2
+3
+
+Floats in string:
+example: System.out.println("pow(%.3f, %.3f) is %.3f%n),11.635,2.760, 874.008)
+The %n is a platform independent newline character which corresponds to
+System.getProperty("line.separator")
 
 
