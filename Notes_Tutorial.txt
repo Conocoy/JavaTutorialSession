@@ -24,3 +24,33 @@ The %n is a platform independent newline character which corresponds to
 System.getProperty("line.separator")
 
 
+Polymorphism etc:
+You can give a Parent class reference a child object. for example:
+
+public class Animal {
+	void talk(){
+		println("Animals don't talk!");
+	}
+}
+
+public class Dog extends Animal {
+	void talk(){
+		println("Wan Wan");
+	}
+}
+
+Now consider the following demo code:
+
+public class AnimalsAndDogs {
+	public static void main(String[] args){
+		Animal a = new Animal();
+		Animal b = new Dog();	
+		Dog c = new Dog();
+		
+		a.talk();
+		b.talk();
+		c.talk();
+	}
+}
+
+Now, when compiling (javac AnimalsAndDogs.java), the compiler looks at the animal talk method for a (reference animal and an object animal). For c the compiler looks at the Dogs talk method (ref dog and object dog). However, for b the compiler looks at the Animal talk method, as the reference is an Animal. When running the JVM (Java Virtual Machine, the platform independent running environment of java) a.talk() runs Animal.talk, c.talk() runs Dog.talk, but now b.talk() runs Dog.talk() as the object is a dog, even though the reference is an animal.
